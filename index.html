@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="main container">
+    <div class="title">
+      <h2>Todo List</h2>
+    </div>
+    <div class="header">
+      <div class="cont__text">
+        <input type="text" id="todoText" class="cont__input" required="required">
+        <span class="cont__span">write next task</span>
+      </div>
+      <input type="button" id="todoBtn" class="todo__btn" value="add">
+    </div>
+    <div class="list" id="list">
+    </div>
+    <!-- <label class="lbl__check">
+      <input type="checkbox" class="list__check">
+      <div  class="lbl__check__div"></div>
+    </label> -->
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>
