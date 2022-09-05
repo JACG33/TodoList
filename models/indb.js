@@ -7,7 +7,7 @@ export class DB {
       // console.log('Se creo')
       this.db = this.indb.result;
       if (!this.db.objectStoreNames.contains('task')) {
-        db.createObjectStore('task', {
+        this.db.createObjectStore('task', {
           keyPath: 'id'
         })
       }
