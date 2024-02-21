@@ -12,16 +12,18 @@
 <body>
 
   <div class="main container">
-    <div class="title">
-      <h2>Todo List</h2>
-    </div>
-    <div class="header">
-      <div class="cont__text">
-        <input type="text" id="todoText" class="cont__input" required="required">
-        <span class="cont__span">write next task</span>
+    <header class="header">
+      <div class="title">
+        <h1>Todo List</h1>
       </div>
-      <input type="button" id="todoBtn" class="todo__btn" value="add">
-    </div>
+      <form action="" class="form__area">
+        <div class="cont__text">
+          <input type="text" id="todoText" class="cont__input" placeholder=" ">
+          <span class="cont__span">write next task</span>
+        </div>
+        <button type="submit" id="addTask" class="todo__btn">Agregar Tarea</button>
+      </form>
+    </header>
     <div class="list" id="list">
     </div>
   </div>

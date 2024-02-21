@@ -1,2 +1,6 @@
 # TodoList
-Este proyecto es una ***TodoList*** que hace uso de la **API** *IndexedDB* del navegador, guardando en el mismo las tareas.
+Este proyecto es un __TodoList__ que hace uso de la __API IndexedDB__ del navegador, guardando en el mismo las tareas.
+
+# Preview
+
+![Preview Todo](./img/preview.png)

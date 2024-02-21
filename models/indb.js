@@ -4,7 +4,6 @@ export class DB {
   arr
   constructor() {
     this.indb.addEventListener('upgradeneeded', (e) => {
-      // console.log('Se creo')
       this.db = this.indb.result;
       if (!this.db.objectStoreNames.contains('task')) {
         this.db.createObjectStore('task', {
@@ -14,13 +13,11 @@ export class DB {
     })
 
     this.indb.addEventListener('success', () => {
-      // console.info('indb conectada')
       this.db = this.indb.result;
       this.consultar();
     })
 
     this.indb.addEventListener('error', () => {
-      // console.error('error en indb')
     })
   }
   setArr(array) {
@@ -46,7 +43,6 @@ export class DB {
     const coneleccionObj = this.setTransaccion('readwrite')
     const request = coneleccionObj.add(data)
     request.addEventListener('complete', () => {
-      console.log('agregado')
     })
   }
 
@@ -59,7 +55,6 @@ export class DB {
     const request = coneleccionObj.get(data)
 
     request.addEventListener('success', (e) => {
-      console.log(request.result);
     })
   }
 
@@ -72,7 +67,6 @@ export class DB {
     const request = coneleccionObj.put(data)
 
     request.addEventListener('success', (e) => {
-      console.log(request.result);
     })
   }
 
@@ -85,7 +79,7 @@ export class DB {
     const request = coneleccionObj.delete(data)
 
     request.addEventListener('success', (e) => {
-      console.log('eliminado');
+      return true
     })
   }
   /**
